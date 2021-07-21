@@ -1,0 +1,7 @@
+{% extends 'learning_logs/base.html' %} {% block content %}
+<form method="POST">
+  {% csrf_token %} Are you sure you want to delete this topic?
+  <input type="submit" value="Yes" />
+  <a href="/">Cancle</a>
+</form>
+{% endblock content %}
